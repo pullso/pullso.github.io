@@ -4,6 +4,7 @@
 @import "blocks/buttons";
 body {
   font-family: "Montserrat", sans-serif;
+  color: $base-color;
 }
 li,
 a {
@@ -11,4 +12,9 @@ a {
   padding: 0;
   display: inline-block;
   text-decoration: none;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 48px;
 }

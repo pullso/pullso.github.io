@@ -1,10 +1,13 @@
 .header {
   padding-top: 18px;
+  position: relative;
+
   .menu {
     max-height: 57px;
     &__avatar {
       &-image {
         max-width: 57px;
+        max-height: 57px;
         border-radius: 100%;
         margin-right: 15px;
         max-height: 57px;
@@ -38,6 +41,48 @@
           cursor: pointer;
           text-decoration: none;
         }
+      }
+    }
+  }
+  .main {
+    margin-top: 58px;
+    max-height: 478px;
+    background: url("../img/header_bg.png") center top no-repeat;
+    z-index: -1;
+    max-width: 100%;
+    padding-top: 58px;
+    &__photo {
+      position: absolute;
+      top: -235px;
+      left: 193px;
+      z-index: 0;
+      transform: scale(0.97);
+      overflow: hidden;
+      z-index: -1;
+    }
+    &__left {
+      padding-top: 78px;
+      .title {
+        &-pre {
+          color: $base-color;
+          font-size: 32px;
+          font-weight: 300;
+          line-height: 15px;
+          padding-bottom: 15px;
+        }
+        &-desc {
+          color: $second-color;
+          padding-top: 19px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 15px;
+        }
+      }
+      &-buttons {
+        padding-top: 42px;
+      }
+      &-social {
+        padding-top: 27px;
       }
     }
   }
