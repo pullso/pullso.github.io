@@ -1,3 +1,44 @@
 .header {
   padding-top: 18px;
+  .menu {
+    max-height: 57px;
+    &__avatar {
+      &-image {
+        max-width: 57px;
+        border-radius: 100%;
+        margin-right: 15px;
+        max-height: 57px;
+      }
+      &-title {
+        padding-top: 3px;
+        @include label;
+      }
+      &-subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+        color: $second-color;
+        padding-top: 5px;
+      }
+    }
+    &__links {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        padding-top: 12px;
+      }
+      &-item {
+        margin-right: 10px;
+        &:hover {
+          border-bottom: 3px solid $base-color;
+        }
+        a {
+          @include label;
+          text-transform: uppercase;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }

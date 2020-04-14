@@ -1,7 +1,14 @@
-@import "../css/adds/bootstrap.min";
-@import "../css/adds/variables";
+@import "adds/variables";
+@import "adds/mixins";
 @import "blocks/header";
-
+@import "blocks/buttons";
 body {
   font-family: "Montserrat", sans-serif;
+}
+li,
+a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
 }
