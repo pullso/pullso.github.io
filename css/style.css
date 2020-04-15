@@ -61,20 +61,24 @@
 @media (max-width: 992px) {
   .header .menu__links {
     display: none;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    z-index: 3;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) and (max-width: 576px) {
   .header .menu__links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    display: none;
+    position: relative;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 992px) {
   .header .menu__links ul {
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -82,16 +86,37 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 28px;
-    margin: 0 auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    width: 100%;
+    width: 300px;
+    background-color: rgba(106, 105, 107, 0.9);
+    border-radius: 10px;
+  }
+  .header .menu__links ul li {
+    border: 1px solid #fff;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 576px) {
+  .header .menu__links ul {
+    font-size: 24px;
   }
 }
 
 .header .menu__links-item {
   margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .header .menu__links-item {
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+  }
 }
 
 .header .menu__links-item:hover {
@@ -106,6 +131,12 @@
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .header .menu__links-item a {
+    color: #fff;
+  }
 }
 
 .header .main {
@@ -324,6 +355,15 @@
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+@media (max-width: 992px) {
+  .my-button {
+    margin-top: 3px;
+    padding-bottom: 10px;
+    color: #fff;
+    border: none;
+  }
 }
 
 .my-button:hover {
@@ -627,19 +667,13 @@ h1 {
   display: block !important;
 }
 
-.links__bg {
-  background-color: rgba(0, 0, 0, 0.918);
-  position: absolute;
-  top: 0;
-  right: 0;
+.progress {
+  position: fixed;
   left: 0;
-  bottom: 0;
-  z-index: 10;
-  display: none;
-}
-
-.br {
-  height: 100px;
-  background: url("../img/br.png") center center/cover no-repeat;
+  top: 0;
+  width: 0;
+  height: 3px;
+  background-color: #6a696b;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */

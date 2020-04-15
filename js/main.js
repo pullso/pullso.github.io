@@ -2,11 +2,10 @@ new WOW().init();
 
 window.addEventListener("DOMContentLoaded", (e) => {
   const menuIcon = document.querySelector(".menu__icon");
-  const linksBg = document.querySelector(".links__bg");
   const menuLinks = document.querySelector(".menu__links");
+  const links = document.querySelectorAll(".menu__links-item");
   const tabs = document.querySelectorAll(".nav-item .nav-link");
-
-  console.log(tabs);
+  const progress = document.querySelector(".progress");
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", (e) => {
@@ -30,9 +29,27 @@ window.addEventListener("DOMContentLoaded", (e) => {
   });
 
   menuIcon.addEventListener("click", (e) => {
-    console.log("click");
     menuLinks.classList.toggle("active");
-    linksBg.classList.toggle("active");
+    menuLinks.classList.add("open");
+    // linksBg.classList.toggle("active");
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      if (menuLinks.classList.contains("open")) {
+        menuLinks.classList.remove("active", "open");
+      }
+    });
+  });
+
+  window.addEventListener("scroll", (e) => {
+    let windowScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    let windowHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    let per = (windowScroll / windowHeight) * 100;
+    progress.style.width = per + "%";
   });
 
   //==== end DOMContentLoaded ====
