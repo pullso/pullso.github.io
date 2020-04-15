@@ -474,10 +474,9 @@
 .works .card-deck .card-desc {
   opacity: 0;
   position: absolute;
-  top: 10%;
-  right: center;
+  top: 5%;
   font-size: 14px;
-  padding: 20px;
+  padding: 10px;
   color: #fff;
 }
 
