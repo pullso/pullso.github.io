@@ -37,3 +37,17 @@ h1 {
 .disable {
   display: none !important;
 }
+.active {
+  display: block !important;
+}
+
+.links__bg {
+  background-color: rgba(0, 0, 0, 0.918);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  display: none;
+}
