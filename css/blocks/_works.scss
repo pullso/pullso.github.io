@@ -26,8 +26,9 @@
     }
   }
 
-  .nav-pills .nav-link.active {
+  .nav-pills .nav-link.active_tab {
     background-color: $base-color;
+    color: #fff;
   }
   .card-deck {
     padding-top: 36px;

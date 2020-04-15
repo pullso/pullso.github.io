@@ -442,8 +442,9 @@
   }
 }
 
-.works .nav-pills .nav-link.active {
+.works .nav-pills .nav-link.active_tab {
   background-color: #2b2a2c;
+  color: #fff;
 }
 
 .works .card-deck {
