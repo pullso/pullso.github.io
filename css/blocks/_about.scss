@@ -1,0 +1,79 @@
+.about {
+  overflow-x: hidden;
+  position: relative;
+
+  &__photo {
+    background: url("../img/about.png") no-repeat;
+    height: 606px;
+    @include _992 {
+      transform: scale(0.83);
+      position: absolute;
+      z-index: 1;
+      right: 40px;
+      width: 380px;
+    }
+    @include _768 {
+      top: 40px;
+    }
+    @include _576 {
+      transform: scale(0.65);
+      position: absolute;
+      z-index: 1;
+      right: 40px;
+      width: 380px;
+      top: 0;
+    }
+    &-bg {
+      width: 414px;
+      height: 414px;
+
+      background-color: #efefef;
+      position: absolute;
+      z-index: -1;
+      top: 200px;
+      @include _992 {
+        transform: scale(0.7);
+        right: 20px;
+      }
+      @include _768 {
+      }
+    }
+  }
+  &__title {
+    padding-top: 104px;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $base-color;
+    @include _576 {
+      padding-top: 600px;
+    }
+  }
+  &__subtitle {
+    width: 470px;
+    // margin-top: 25px;
+    font-size: 42px;
+    font-weight: 700;
+    color: #dedede;
+    line-height: 65px;
+    text-transform: uppercase;
+  }
+  &__desc {
+    color: $base-color;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    span {
+      background-color: rgba($color: $second-color, $alpha: 0.15);
+      color: $base-color;
+    }
+    i {
+      background-color: rgba($color: $base-color, $alpha: 0.15);
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+  }
+}

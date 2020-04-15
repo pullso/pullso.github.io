@@ -39,7 +39,7 @@
               </div>
             </div>
           </div>
-          <div class="menu__icon col-md-1 col-2 ml-auto">
+          <div class="menu__icon col-md-1 col-2 ml-auto wow fadeInRight">
             <img src="img/icons/menu.svg" alt="menu" />
           </div>
           <div class="offset-xl-2 col-xl-9 col-md-12 ml-auto">
@@ -52,7 +52,7 @@
                   <a href="#serts">Сертификаты</a>
                 </li>
                 <li class="menu__links-item">
-                  <a href="#">Обо мне</a>
+                  <a href="#about">Обо мне</a>
                 </li>
                 <li class="menu__links-item">
                   <a href="#">Контакты</a>
@@ -76,7 +76,11 @@
       <div class="container">
         <div class="row">
           <div class="main">
-            <div class="main__bg wow fadeIn"></div>
+            <div
+              class="main__bg wow pulse"
+              data-wow-duration="3s"
+              data-wow-delay="1.3s"
+            ></div>
 
             <div class="col-xl-6 col-md-7 col-sm-7 main__left">
               <div class="title-pre wow fadeInLeft">
@@ -169,13 +173,18 @@
                 >
               </div>
             </div>
-            <div class="main__right wow fadeIn" data-wow-delay="1,5s"></div>
+            <div class="main__right wow fadeIn" data-wow-duration="1s"></div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="works fadeIn wow" data-wow-delay="3s" id="works">
+    <section
+      class="works fadeIn wow"
+      data-wow-duration="2s"
+      data-wow-delay="3s"
+      id="works"
+    >
       <div class="container">
         <div class="row">
           <ul class="nav nav-pills mx-auto wow fadeIn">
@@ -659,6 +668,69 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-md-6 col-12 wow fadeInLeft">
+            <div class="about__photo"></div>
+            <div class="about__photo-bg"></div>
+          </div>
+          <div class="col-xl-6 col-md-6 col-12">
+            <div class="about__title wow pulse">Обо мне</div>
+            <div
+              class="about__subtitle wow fadeIn"
+              data-wow-delay="2s"
+              data-wow-duration="2s"
+            >
+              Кто я
+            </div>
+            <div class="about__desc">
+              Меня зовут Павел. Я начинающий Front-End разработчик.<br />
+              Главное для меня — писать код и сервисы ДЛЯ ЛЮДЕЙ, а не для
+              роботов. <br />
+              <br />
+              Я программировал еще в ВУЗе первые проекты на C++. В благодарность
+              за проекты люди жертвовали деньги.<br />
+              И уже тогда я понял, что <span>главное в коде - читаемость</span>.
+              А <i>главное в сервисе - удобство для пользователя</i>.<br />
+              <br />
+              В 2019 начал работать в стеке Fronted: Изучил верстку, основы JS и
+              Vue.js и продолжаю расти в этом направлении.
+              <br /><br />
+              Я люблю слушать подкасты, читать бизнес-литературу и работать над
+              проектами с утра до вечера. <br />
+              <br />
+            </div>
+            <div class="about__buttons">
+              <a
+                href="https://vk.me/pullso_music"
+                class="wow fadeInUp"
+                data-wow-delay="1s"
+                target="_blank"
+              >
+                <button type="button" class="btn btn-dark mr-2 my-button-dark">
+                  Заказать
+                </button>
+              </a>
+
+              <a
+                href="https://ekaterinburg.hh.ru/applicant/resumes/view?resume=9a3a97c7ff07d38f380039ed1f443037706b31"
+                target="_blank"
+                class="wow fadeInUp"
+                data-wow-delay="1.5s"
+              >
+                <button
+                  type="button"
+                  class="btn btn-outline-dark my-button-white"
+                >
+                  Резюме
+                </button></a
+              >
             </div>
           </div>
         </div>
