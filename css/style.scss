@@ -3,6 +3,7 @@
 @import "blocks/header";
 @import "blocks/buttons";
 @import "blocks/works";
+@import "blocks/media";
 body {
   font-family: "Montserrat", sans-serif;
   color: $base-color;
@@ -18,4 +19,21 @@ a {
 h1 {
   font-weight: 700;
   line-height: 48px;
+  font-size: 45px;
+  @include _992 {
+    font-size: 38px;
+  }
+  @include _768 {
+    font-size: 26px;
+    line-height: 30px;
+    // background-color: rgba(255, 255, 255, 0.671);
+  }
+  @include _576 {
+    display: inline-block;
+    padding: 7px 9px;
+    display: none;
+  }
+}
+.disable {
+  display: none !important;
 }

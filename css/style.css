@@ -9,6 +9,21 @@
   max-height: 57px;
 }
 
+.header .menu__icon {
+  width: 32px;
+  display: none;
+  padding-top: 5px;
+}
+
+@media (max-width: 992px) {
+  .header .menu__icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    display: block;
+  }
+}
+
 .header .menu__avatar-image {
   max-width: 57px;
   max-height: 57px;
@@ -34,16 +49,38 @@
 }
 
 .header .menu__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-transition: 0.3 all ease;
+  transition: 0.3 all ease;
 }
 
-.header .menu__links ul {
-  padding-top: 12px;
+@media (max-width: 992px) {
+  .header .menu__links {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .menu__links {
+    margin-top: -200px;
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .menu__links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 28px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .header .menu__links-item {
@@ -65,30 +102,55 @@
 }
 
 .header .main {
-  margin-top: 58px;
-  max-height: 478px;
-  background: url("../img/header_bg.png") center top no-repeat;
+  background: url("../img/header_bg.png") center center/cover repeat;
   z-index: -1;
   max-width: 100%;
-  padding-top: 58px;
+  padding-top: 158px;
+  position: relative;
+  max-height: 607px;
 }
 
 .header .main__right {
-  overflow: hidden;
-  background: url("../img/man.png") bottom no-repeat;
-  max-width: 360px;
+  background: url("../img/man_min.png") right bottom no-repeat;
   height: 100%;
+  width: 100%;
   position: absolute;
-  right: 0;
+  top: 5px;
+  right: 34px;
   bottom: 0;
   z-index: -1;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
-  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  .header .main__right {
+    height: 431px;
+    left: 0px;
+    margin: 0;
+    top: 20px;
+    padding: 0;
+    z-index: -1;
+    top: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    background-size: contain;
+  }
 }
 
 .header .main__left {
   padding-top: 33px;
+}
+
+@media (max-width: 576px) {
+  .header .main__left {
+    position: absolute;
+    top: 0px;
+    padding-top: 0;
+    max-width: 250px;
+  }
 }
 
 .header .main__left .title-pre {
@@ -99,6 +161,25 @@
   padding-bottom: 15px;
 }
 
+@media (max-width: 992px) {
+  .header .main__left .title-pre {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .main__left .title-pre {
+    font-size: 20px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .main__left .title-pre {
+    opacity: 0;
+  }
+}
+
 .header .main__left .title-desc {
   color: #6a696b;
   padding-top: 19px;
@@ -107,22 +188,74 @@
   line-height: 15px;
 }
 
+@media (max-width: 768px) {
+  .header .main__left .title-desc {
+    font-size: 16px;
+    line-height: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .main__left .title-desc {
+    display: inline-block;
+    font-weight: normal;
+    background-color: rgba(255, 255, 255, 0.795);
+    padding: 7px 9px;
+    line-height: 15px;
+    display: none;
+  }
+}
+
 .header .main__left-buttons {
   padding-top: 42px;
   margin-bottom: 43px;
+}
+
+@media (max-width: 768px) {
+  .header .main__left-buttons {
+    padding-top: 20px;
+    margin-bottom: 17px;
+  }
+  .header .main__left-buttons a {
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .main__left-buttons {
+    position: absolute;
+    top: 10px;
+  }
 }
 
 .header .main__left-social {
   padding-top: 27px;
 }
 
+@media (max-width: 576px) {
+  .header .main__left-social {
+    padding-left: 30px;
+    padding-top: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header .main__left-social button {
+    margin-top: 10px;
+  }
+}
+
 .my-button {
   border-radius: 19px;
   border: 2px solid #2b2a2c;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   color: #2b2a2c;
-  padding: 13px 32px;
+  padding: 12px 26px;
   line-height: 16.84px;
   text-transform: uppercase;
   -webkit-transition: all 0.2s ease;
@@ -138,7 +271,7 @@
           box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   background-color: #2b2a2c;
-  padding: 21px 49px;
+  padding: 21px 35px;
   font-size: 16px;
   font-weight: 400;
   line-height: 15px;
@@ -157,7 +290,7 @@
   border-radius: 25px;
   border: 1px solid #6a696b;
   color: #6a696b;
-  padding: 21px 49px;
+  padding: 21px 37px;
   font-size: 16px;
   font-weight: 400;
   line-height: 15px;
@@ -165,6 +298,12 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   letter-spacing: 0.8px;
+}
+
+@media (max-width: 576px) {
+  .my-button-white {
+    background-color: rgba(255, 255, 255, 0.671);
+  }
 }
 
 .my-button-white:hover {
@@ -180,6 +319,12 @@
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #2b2a2c;
+}
+
+@media (max-width: 576px) {
+  .my-button-square {
+    background-color: rgba(255, 255, 255, 0.671);
+  }
 }
 
 .my-button-square:hover {
@@ -217,11 +362,11 @@
 
 .works .card-deck .card {
   max-height: 370px;
-  max-width: 370px;
   -webkit-box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   padding: 0;
+  margin: 0 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   overflow: hidden;
@@ -309,5 +454,31 @@ a {
 h1 {
   font-weight: 700;
   line-height: 48px;
+  font-size: 45px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    display: inline-block;
+    padding: 7px 9px;
+    display: none;
+  }
+}
+
+.disable {
+  display: none !important;
 }
 /*# sourceMappingURL=style.css.map */

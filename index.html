@@ -19,8 +19,8 @@
     <header class="header">
       <div class="container">
         <div class="row menu">
-          <div class="col-xl-3">
-            <div class="menu__avatar d-flex">
+          <div class="col-xl-3 col-md-11 col-10">
+            <div class="menu__avatar d-inline-flex">
               <img
                 src="img/avatar-min.jpeg"
                 alt="avatar"
@@ -29,13 +29,16 @@
               <div class="menu__avatar-title">
                 Павел<br />
                 Дубицкий<br />
-                <p class="menu__avatar-subtitle">Front-end разработик</p>
+                <p class="menu__avatar-subtitle">Front-end разработчик</p>
               </div>
             </div>
           </div>
-          <div class="col-xl-9">
+          <div class="menu__icon col-md-1 col-2 ml-auto">
+            <img src="img/icons/menu.svg" alt="menu" />
+          </div>
+          <div class="offset-xl-2 col-xl-9 col-md-12 ml-auto">
             <nav class="menu__links">
-              <ul class="ml-auto">
+              <ul>
                 <li class="menu__links-item">
                   <a href="#">Работы</a>
                 </li>
@@ -48,12 +51,17 @@
                 <li class="menu__links-item">
                   <a href="#">Контакты</a>
                 </li>
+                <li>
+                  <a href="#">
+                    <button
+                      type="button"
+                      class="btn btn-outline-dark my-button"
+                    >
+                      Заказать
+                    </button></a
+                  >
+                </li>
               </ul>
-              <a href="#">
-                <button type="button" class="btn btn-outline-dark my-button">
-                  Заказать
-                </button></a
-              >
             </nav>
           </div>
         </div>
@@ -61,11 +69,11 @@
       <div class="container">
         <div class="row main">
           <div class="main__bg"></div>
-          <div class="col-xl-6 main__left">
+          <div class="col-xl-6 col-md-6 main__left">
             <div class="title-pre">Здравствуйте, меня зовут</div>
             <h1>Павел Дубицкий</h1>
             <div class="title-desc">
-              Я - Front-End разработик
+              Front-End разработчик
             </div>
             <div class="main__left-social">
               <button class="my-button-square">
@@ -128,13 +136,13 @@
               >
             </div>
           </div>
-          <div class="col-xl-6 main__right">
-            <!-- <img class="main__photo" src="/img/man.png" alt="Pavel" /> -->
+          <div class="col-xl-6 col-md-12 main__right">
+            <div class="main__right-bg"></div>
           </div>
         </div>
       </div>
     </header>
-    <section class="works">
+    <!-- <section class="works">
       <div class="container">
         <div class="row">
           <ul class="nav nav-pills mx-auto">
@@ -154,7 +162,7 @@
         </div>
         <div class="row">
           <div class="card-deck">
-            <div class="card col-xl-4">
+            <div class="card col-xl-4 col-12">
               <div class="card-desc mt-3">
                 Верстка лендинга с слайдером и формой обратной связи.Сделана
                 мобильная адаптация.
@@ -219,7 +227,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
