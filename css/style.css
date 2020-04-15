@@ -122,12 +122,13 @@
 }
 
 .header .main__bg {
-  width: 1215px;
-  height: 436px;
-  background: url("../img/header_bg.png");
+  width: 528px;
+  min-height: 410px;
+  max-height: 449px;
+  background: url("../img/header_bg_min.png") right top/cover no-repeat;
   z-index: -1;
   position: absolute;
-  right: 0px;
+  right: 20px;
   top: 97px;
 }
 
@@ -137,9 +138,10 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .header .main__bg {
-    height: 300px;
+    top: 50px;
+    right: 0px;
   }
 }
 
@@ -236,7 +238,7 @@
 
 @media (max-width: 576px) {
   .header .main__left .title-pre {
-    opacity: 0;
+    display: none;
   }
 }
 

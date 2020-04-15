@@ -10,7 +10,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <link rel="stylesheet" href="css/adds/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -23,7 +23,11 @@
         <div class="row">
           <div class="menu"></div>
           <div class="col-xl-3 col-md-11 col-8">
-            <div class="menu__avatar d-inline-flex">
+            <div
+              class="menu__avatar wow fadeInLeft d-inline-flex"
+              data-wow-duration="1s"
+              data-wow-delay="3,5s"
+            >
               <img
                 src="img/avatar-min.jpeg"
                 alt="avatar"
@@ -40,7 +44,7 @@
             <img src="img/icons/menu.svg" alt="menu" />
           </div>
           <div class="offset-xl-2 col-xl-9 col-md-12 ml-auto">
-            <nav class="menu__links">
+            <nav class="menu__links wow fadeIn" data-wow-delay="1s">
               <ul>
                 <li class="menu__links-item">
                   <a href="#works">Работы</a>
@@ -73,16 +77,21 @@
       <div class="container">
         <div class="row">
           <div class="main">
-            <div class="main__bg"></div>
+            <div class="main__bg wow fadeIn"></div>
 
             <div class="col-xl-6 col-md-7 col-sm-7 main__left">
-              <div class="title-pre">Здравствуйте, меня зовут</div>
-              <h1>Павел Дубицкий</h1>
-              <div class="title-desc">
+              <div class="title-pre wow fadeInLeft">
+                Здравствуйте, меня зовут
+              </div>
+              <h1 class="wow fadeInLeft" data-wow-delay="1s">Павел Дубицкий</h1>
+              <div class="title-desc wow fadeInLeft" data-wow-delay="1s">
                 Front-End разработчик
               </div>
               <div class="main__left-social">
-                <button class="my-button-square">
+                <button
+                  class="my-button-square wow rollIn"
+                  data-wow-delay="1.7s"
+                >
                   <a href="tel:79920105554" target="_blank" type="phone">
                     <img
                       src="img/icons/phone-call.svg"
@@ -92,7 +101,10 @@
                   </a>
                 </button>
 
-                <button class="my-button-square">
+                <button
+                  class="my-button-square wow rollIn"
+                  data-wow-delay="2.0s"
+                >
                   <a href="https://t-do.ru/pullso" target="_blank">
                     <img
                       src="img/icons/send.svg"
@@ -102,7 +114,10 @@
                     />
                   </a>
                 </button>
-                <button class="my-button-square">
+                <button
+                  class="my-button-square wow rollIn"
+                  data-wow-delay="2.3s"
+                >
                   <a href="mailto:p.dubitskiy@yandex.ru" target="_blank">
                     <img
                       src="img/icons/mail.svg"
@@ -111,7 +126,10 @@
                     />
                   </a>
                 </button>
-                <button class="my-button-square">
+                <button
+                  class="my-button-square wow rollIn"
+                  data-wow-delay="2.6s"
+                >
                   <a href="https://github.com/pullso/" target="_blank">
                     <img
                       src="img/icons/github.svg"
@@ -123,7 +141,12 @@
               </div>
 
               <div class="main__left-buttons">
-                <a href="https://vk.me/pullso_music" target="_blank">
+                <a
+                  href="https://vk.me/pullso_music"
+                  class="wow fadeInUp"
+                  data-wow-delay="1s"
+                  target="_blank"
+                >
                   <button
                     type="button"
                     class="btn btn-dark mr-2 my-button-dark"
@@ -135,6 +158,8 @@
                 <a
                   href="https://ekaterinburg.hh.ru/applicant/resumes/view?resume=9a3a97c7ff07d38f380039ed1f443037706b31"
                   target="_blank"
+                  class="wow fadeInUp"
+                  data-wow-delay="1.5s"
                 >
                   <button
                     type="button"
@@ -145,7 +170,7 @@
                 >
               </div>
             </div>
-            <div class="main__right"></div>
+            <div class="main__right wow fadeIn" data-wow-delay="1,5s"></div>
           </div>
         </div>
       </div>
@@ -154,25 +179,25 @@
     <section class="works" id="works">
       <div class="container">
         <div class="row">
-          <ul class="nav nav-pills mx-auto">
+          <ul class="nav nav-pills mx-auto wow fadeIn">
             <li class="nav-item">
-              <a class="nav-link ative_tab" href="#">Все работы</a>
+              <a class="nav-link active_tab" href="#" id="all">Все работы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Vue.js</a>
+              <a class="nav-link" href="#" id="category-vue">Vue.js</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">JavaScript</a>
+              <a class="nav-link" href="#" id="category-js">JavaScript</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Верстка</a>
+              <a class="nav-link" href="#" id="category-html">Верстка</a>
             </li>
           </ul>
         </div>
         <div class="row">
-          <div class="card-deck">
+          <div class="card-deck portfolio">
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Приложение обращается к серверу и получае базу данных ТОП 250
                   фильмов. После выводит их на страницу и в зависимости от
@@ -208,7 +233,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Приложение для подсчета бюджета, работающие в бразуере без
                   перезагрузки.
@@ -242,7 +267,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Сервис по поиску дешевых авиабилетов по всему миру.
                   <br />С дополнительной подгрузкой городов из API
@@ -278,7 +303,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Создание формы авторизации и регистрации пользователей.
                   <br />С дополнительной подгрузкой городов из API(вводите на
@@ -316,7 +341,7 @@
             </div>
 
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Верстка лендинга с слайдером и формой обратной связи.Сделана
                   мобильная адаптация.
@@ -351,7 +376,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Верстка лендинга для UBER. Сделана мобильная адаптация.
                   <br />
@@ -386,7 +411,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Простое мобильное приложение, работающее в браузере без
                   перезагрузок(SPA)
@@ -421,7 +446,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Креативный лендинг с примером нестандартного расположения
                   элементов. Смотрится стильно
@@ -457,7 +482,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Создание на сайте вкладок, слайдера фотографий, таймера,
                   калькулятора
@@ -492,7 +517,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Разработка идеи, дизайна, верстка, создание видеофона.Сделана
                   мобильная адаптация.
@@ -531,7 +556,7 @@
         <div class="row" id="serts">
           <div class="card-deck">
             <div class="col-xl-4 col-md-6 col-12 mb-3">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Настоящий сертификат подтверждает, что пользователь Павел
                   Дубицкий успешно прошел курс Полный курс по JavaScript - с
@@ -566,7 +591,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Настоящий сертификат подтверждает, что пользователь Павел
                   Дубицкий успешно прошел курс WEB-разработчик 2020 - 01.02.2020
@@ -601,7 +626,7 @@
               </div>
             </div>
             <div class="col-xl-4 col-md-6 col-12 mb-3">
-              <div class="card">
+              <div class="card wow fadeInLeft">
                 <div class="card-desc">
                   Настоящий сертификат подтверждает, что пользователь Павел
                   Дубицкий успешно прошел курс Современный JavaScript + Vue с
@@ -651,7 +676,8 @@
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
