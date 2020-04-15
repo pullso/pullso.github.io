@@ -44,8 +44,8 @@
       transition: all 0.2s ease;
       overflow: hidden;
       @include _576 {
-        max-height: 300px;
-        max-width: 300px;
+        max-height: 370px;
+        max-width: 370px;
       }
       &-desc {
         opacity: 0;

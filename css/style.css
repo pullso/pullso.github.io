@@ -508,8 +508,8 @@
 
 @media (max-width: 576px) {
   .works .card-deck .card {
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 370px;
+    max-width: 370px;
   }
 }
 
@@ -622,6 +622,7 @@
 .about {
   overflow: hidden;
   position: relative;
+  min-height: 800px;
 }
 
 .about__photo {
@@ -651,10 +652,10 @@
     -webkit-transform: scale(0.65);
             transform: scale(0.65);
     position: absolute;
-    z-index: 1;
-    right: 40px;
+    z-index: 21;
+    right: 0px;
     width: 380px;
-    top: 0;
+    top: -100px;
   }
 }
 
@@ -675,6 +676,13 @@
   }
 }
 
+@media (max-width: 576px) {
+  .about__photo-bg {
+    top: 49px;
+    left: -50px;
+  }
+}
+
 .about__title {
   padding-top: 104px;
   font-size: 45px;
@@ -686,7 +694,7 @@
 
 @media (max-width: 576px) {
   .about__title {
-    padding-top: 600px;
+    padding-top: 440px;
   }
 }
 
