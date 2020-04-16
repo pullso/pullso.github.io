@@ -1,0 +1,47 @@
+.footer {
+  margin-top: 50px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  min-height: 62px;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-color: $base-color;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  &__bg {
+    background: url("../img/quote.png") left top/ cover;
+    width: 95%;
+    max-width: 1980px;
+    height: 100%;
+    max-height: 230px;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .my-button-square {
+    background-color: rgba($color: #fff, $alpha: 0.7);
+  }
+  &__text {
+    color: $footer-color;
+    padding-top: 10px;
+    line-height: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    // padding-bottom: 20px;
+    @include _576 {
+      padding-bottom: 12px;
+    }
+    a {
+      font-size: 12px;
+      @include _576 {
+        padding-top: 12px;
+      }
+      text-align: center;
+      color: $footer-color;
+    }
+  }
+}

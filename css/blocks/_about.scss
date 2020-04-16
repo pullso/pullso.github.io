@@ -1,11 +1,12 @@
 .about {
   overflow: hidden;
   position: relative;
-  min-height: 800px;
+  min-height: 650px;
 
   &__photo {
     background: url("../img/about.png") no-repeat;
     height: 606px;
+
     @include _992 {
       transform: scale(0.83);
       position: absolute;
@@ -15,7 +16,7 @@
       top: 20px;
     }
     @include _768 {
-      top: 40px;
+      top: -3px;
     }
     @include _576 {
       transform: scale(0.65);
@@ -32,16 +33,19 @@
       background-color: #efefef;
       position: absolute;
       z-index: -1;
-      top: 200px;
+      top: 193px;
       @include _992 {
-        transform: scale(0.7);
+        transform: scale(0.8);
         right: 20px;
+        top: 179px;
       }
       @include _768 {
       }
       @include _576 {
-        top: 49px;
-        left: -50px;
+        transform: scale(0.7);
+
+        top: 47px;
+        left: 14px;
       }
     }
   }

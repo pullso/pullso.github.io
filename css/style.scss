@@ -5,6 +5,10 @@
 @import "blocks/works";
 @import "blocks/media";
 @import "blocks/about";
+@import "blocks/quote";
+@import "blocks/contacts";
+@import "blocks/footer";
+
 body {
   font-family: "Montserrat", sans-serif;
   color: $base-color;
@@ -61,4 +65,8 @@ h1 {
   height: 3px;
   background-color: $second-color;
   z-index: 1;
+}
+
+.body {
+  overflow: hidden;
 }
