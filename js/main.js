@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", (e) => {
   const links = document.querySelectorAll(".menu__links-item");
   const tabs = document.querySelectorAll(".nav-item .nav-link");
   const progress = document.querySelector(".progress");
+  const toTop = document.querySelector("#toTop");
 
   tabs.forEach((tab) => {
     tab.addEventListener("click", (e) => {
@@ -43,6 +44,11 @@ window.addEventListener("DOMContentLoaded", (e) => {
   });
 
   window.addEventListener("scroll", (e) => {
+    if (document.documentElement.scrollTop >= 600) {
+      toTop.classList.remove("disable");
+    } else {
+      toTop.classList.add("disable");
+    }
     let windowScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
     let windowHeight =
@@ -52,5 +58,8 @@ window.addEventListener("DOMContentLoaded", (e) => {
     progress.style.width = per + "%";
   });
 
+  toTop.addEventListener("click", (e) => {
+    window.scroll(0, 0);
+  });
   //==== end DOMContentLoaded ====
 });

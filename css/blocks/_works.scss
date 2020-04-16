@@ -1,5 +1,12 @@
 .works {
   padding-top: 43px;
+  &__subtitle {
+    // margin-top: 25px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #dedede;
+    text-transform: uppercase;
+  }
   @include _576 {
     .nav {
       // flex-direction: column;

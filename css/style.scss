@@ -12,6 +12,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: $base-color;
+  position: relative;
 }
 li,
 a {
@@ -69,4 +70,12 @@ h1 {
 
 .body {
   overflow: hidden;
+}
+
+#toTop {
+  z-index: 999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
 }

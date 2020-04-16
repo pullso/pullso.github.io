@@ -455,6 +455,13 @@
   padding-top: 43px;
 }
 
+.works__subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: #dedede;
+  text-transform: uppercase;
+}
+
 @media (max-width: 576px) {
   .works .nav {
     text-align: center;
@@ -851,6 +858,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #2b2a2c;
+  position: relative;
 }
 
 li,
@@ -908,5 +916,13 @@ h1 {
 
 .body {
   overflow: hidden;
+}
+
+#toTop {
+  z-index: 999;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
