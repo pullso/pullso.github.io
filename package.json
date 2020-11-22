@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
+    "lint": "vue-cli-service lint --fix",
     "dev": "vue-cli-service serve",
     "unit": "vue-cli-service test:unit"
   },
@@ -68,6 +68,7 @@
     "not dead"
   ],
   "jest": {
-    "preset": "@vue/cli-plugin-unit-jest"
+    "preset": "@vue/cli-plugin-unit-jest",
+    "setupFiles": ["./tests/setup.js"]
   }
 }
