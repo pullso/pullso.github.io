@@ -1,16 +1,18 @@
 <template lang="pug">
   .home
-    HelloWorld(msg="Welcome to Your Vue.js App")
+    HeaderSection
+    WorksSection.mt-4
+
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import HeaderSection from '@/components/HeaderSection.vue';
+import WorksSection from '@/components/WorksSection.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    HeaderSection, WorksSection,
   },
 };
 </script>

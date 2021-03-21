@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import EditCard from '@/views/EditCard.vue';
 import Home from '../views/Home.vue';
 
 Vue.use(VueRouter);
@@ -11,9 +12,14 @@ const routes = [
     component: Home,
   },
   {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue'),
+    path: '/edit/:id',
+    name: 'EditCard',
+    component: EditCard,
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue'),
   },
 ];
 

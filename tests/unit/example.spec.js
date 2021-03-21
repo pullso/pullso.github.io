@@ -1,10 +1,10 @@
 import { shallowMount } from '@vue/test-utils';
-import HelloWorld from '@/components/HelloWorld.vue';
+import MainSection from '@/components/HeaderSection.vue';
 
-describe('HelloWorld.vue', () => {
+describe('HeaderSection.vue', () => {
   it('renders props.msg when passed', () => {
-    const wrapper = shallowMount(HelloWorld, {
+    const wrapper = shallowMount(MainSection, {
     });
-    expect(wrapper.find('h1').text()).toMatch('Welcome to Vuetify');
+    expect(wrapper.find('h1').text()).toMatch('Павел Дубицкий');
   });
 });

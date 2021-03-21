@@ -1,17 +1,21 @@
 <template lang="pug">
   v-app
-    v-app-bar(app='' color='primary' dark='')
-      v-spacer
-    v-main
-      router-view
+    Navbar
+
+    v-main.grey.lighten-3
+      v-container
+        router-view
+
+    Footer
+
 </template>
 
 <script>
+import Footer from '@/components/Footer.vue';
+import Navbar from '@/components/Navbar.vue';
 
 export default {
   name: 'App',
-
-  data: () => ({
-  }),
+  components: { Navbar, Footer },
 };
 </script>
