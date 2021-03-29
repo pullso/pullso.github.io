@@ -11,11 +11,13 @@
           Contacts.mt-4(:outlined="true" :large="true" :size="24")
 
           .mt-6
-            v-btn.header__btn.mr-4.my-2.mt-sm-0.primary(x-large)
-              .text Связаться
+            a.text-decoration-none(href="https://t.me/pullso" target="_blank")
+              v-btn.header__btn.mr-4.my-2.mt-sm-0.primary(x-large)
+                .text Связаться
 
-            v-btn.header__btn.mt-sm-0.my-2(outlined color="primary" x-large)
-              .text Резюме
+            a.text-decoration-none(href="https://ekaterinburg.hh.ru/resume/a939d016ff07ebc4d10039ed1f626158574238" target="_blank")
+              v-btn.header__btn.mt-sm-0.my-2(outlined color="primary" x-large)
+                .text Резюме
 
       .col-xs-12.col-sm-6
         v-lazy

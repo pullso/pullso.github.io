@@ -19,8 +19,9 @@
 
               v-row
                 v-btn.primary.ml-2(type="submit") Сохранить
-                v-btn.danger.ml-2(@click="deleteCard") Удалить
                 v-btn.danger.ml-4(@click="$router.push('/')") Назад
+                v-spacer
+                v-btn.danger.ml-2(@click="deleteCard") Удалить
 
 </template>
 
@@ -41,13 +42,22 @@ export default {
   },
   computed: {
     ...mapGetters(['isUserLoggedIn']),
+    emittedValue() {
+      return {
+        ...this.card,
+        badges: String(this.card.badges).split(','),
+        jpegLink: this.card.jpegLink ? this.card.jpegLink : `http://mini.s-shot.ru/?${this.card.demoLink}`,
+      };
+    },
   },
   methods: {
     async submit() {
-      await this.$store.dispatch('updateCard', { id: this.$route.params.id, card: this.card });
+      await this.$store.dispatch('updateCard', { id: this.$route.params.id, card: this.emittedValue });
+      await this.$router.push('/');
     },
-    deleteCard() {
-
+    async deleteCard() {
+      await this.$store.dispatch('deleteCard', this.$route.params.id);
+      await this.$router.push('/');
     },
   },
 };

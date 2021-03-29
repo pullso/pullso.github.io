@@ -9,7 +9,7 @@
             .text
               | {{ thisYear }} &mdash;&nbsp;
               strong
-                a(href="https://github.com/pullso" target="_blank") @pullso
+                a(href="https://t.me/pullso" target="_blank") @pullso
 
 </template>
 <script>

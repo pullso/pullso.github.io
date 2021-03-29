@@ -48,6 +48,9 @@ export default new Vuex.Store({
       const cards = await firebase.database().ref('cards').get();
       commit('setCards', cards.val());
     },
+    async deleteCard(context, id) {
+      await firebase.database().ref('cards').child(id).remove();
+    },
     async fetchCardsById(context, id) {
       const card = await firebase.database().ref('cards').child(id).get();
       return card.val();
@@ -59,8 +62,12 @@ export default new Vuex.Store({
     isUserLoggedIn(state) {
       return state.user.loggedIn;
     },
-    getCards(state) {
+    cards(state) {
       return state.cards;
+    },
+    getCertificateCards(state) {
+      if (!state.cards.length) return [];
+      return state.cards.filter((card) => card.isCertificate);
     },
   },
 });

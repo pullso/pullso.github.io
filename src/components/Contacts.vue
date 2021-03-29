@@ -1,12 +1,17 @@
 <template lang="pug">
   .contacts
-    v-btn.mr-2.contacts__btn(
-      v-for='icon in icons'
-      :key='icon' icon color="primary"
-      :outlined="outlined"
-    )
-      v-icon(:size="size + 'px'" outline)
-        | {{ icon }}
+    a.text-decoration-none(
+      :href="link.href"
+      v-for='link in links'
+      :key='link.href'
+      target="_blank"
+      )
+      v-btn.mr-2.contacts__btn(
+        icon color="primary"
+        :outlined="outlined"
+      )
+        v-icon(:size="size + 'px'" outline)
+          | {{ link.icon }}
 
 </template>
 
@@ -26,12 +31,12 @@ export default {
   },
   data() {
     return {
-      icons: [
-        'mdi-telegram',
-        'mdi-gmail',
-        'mdi-phone',
-        'mdi-github',
-        'mdi-gitlab',
+      links: [
+        { icon: 'mdi-telegram', href: 'https://t.me/pullso' },
+        { icon: 'mdi-gmail', href: 'mailto: pullso.coge@gmail.com' },
+        { icon: 'mdi-phone', href: 'tel:79920105554' },
+        { icon: 'mdi-github', href: 'https://github.com/pullso' },
+        { icon: 'mdi-gitlab', href: 'https://gitlab.com/pullso' },
       ],
     };
   },

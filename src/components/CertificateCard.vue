@@ -1,7 +1,8 @@
 <template lang="pug">
-  v-card(min-width="300" lazy)
-    v-img.white--text.align-end(v-if="card.jpegLink" :src='card.jpegLink' min-height='230px' )
+  v-card(min-width="300px" max-width="400px" lazy)
+    v-img.white--text.align-end(v-if="card.jpegLink" :src='card.jpegLink' min-height='230px')
       v-chip(
+        v-if="card.badges"
         small v-for="(badge,index) in card.badges"
         :key="index" :color="index === 0 ? 'primary' : 'secondary'"
       ).ma-2 {{ badge.toUpperCase() }}
@@ -49,37 +50,18 @@
         v-divider
         v-card-text
           | {{ card.text }}
-        v-card-actions
-          a.text-decoration-none(:href="card.sourceLink" target="_blank" v-if="card.sourceLink")
-            v-btn(
-              color='primary lighten-2'
-              small
-              text
-              rounded
-              outlined
-            )
-              v-icon(left) mdi-eye
-              .text Исходный код
 
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import WorkCard from '@/components/WorkCard.vue';
 
 export default {
-  name: 'WorkCard',
+  name: 'CertificateCard',
+  extends: WorkCard,
   props: {
     card: Object,
     id: String,
-  },
-  data() {
-    return {
-      show: false,
-      liked: false,
-    };
-  },
-  computed: {
-    ...mapGetters(['isUserLoggedIn']),
   },
 };
 </script>
