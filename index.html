@@ -2,22 +2,42 @@
 <html lang="ru">
   <head>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
 
-       ym(66227938, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-       });
+      ym(66227938, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
     </script>
     <noscript>
-        <div>
-          <img src="https://mc.yandex.ru/watch/66227938" style="position:absolute; left:-9999px;" alt="" />
-        </div>
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/66227938"
+          style="position: absolute; left: -9999px"
+          alt=""
+        />
+      </div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
     <meta charset="UTF-8" />
@@ -31,6 +51,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <link rel="icon" href="/img/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/adds/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -88,12 +109,12 @@
                   <a href="#contacts">Контакты</a>
                 </li>
                 <li>
-                  <a href="https://vk.me/pullso_music" target="_blank">
+                  <a href="https://t.me/pullso" target="_blank">
                     <button
                       type="button"
                       class="btn btn-outline-dark my-button"
                     >
-                      Заказать
+                      Написать
                     </button></a
                   >
                 </li>
@@ -138,10 +159,10 @@
                   class="my-button-square wow rollIn"
                   data-wow-delay="2.0s"
                 >
-                  <a href="https://t-do.ru/pullso" target="_blank">
+                  <a href="https://t.me/pullso" target="_blank">
                     <img
                       src="img/icons/send.svg"
-                      style="transform: translateX(-7%);"
+                      style="transform: translateX(-7%)"
                       alt="telegram"
                       title="Написать в телеграм"
                     />
@@ -151,7 +172,7 @@
                   class="my-button-square wow rollIn"
                   data-wow-delay="2.3s"
                 >
-                  <a href="mailto:p.dubitskiy@yandex.ru" target="_blank">
+                  <a href="mailto:pullso.code@gmail.com" target="_blank">
                     <img
                       src="img/icons/mail.svg"
                       alt="mail"
@@ -175,7 +196,7 @@
 
               <div class="main__left-buttons">
                 <a
-                  href="https://vk.me/pullso_music"
+                  href="https://t.me/pullso"
                   class="wow fadeInUp"
                   data-wow-delay="1s"
                   target="_blank"
@@ -184,7 +205,7 @@
                     type="button"
                     class="btn btn-dark mr-2 my-button-dark"
                   >
-                    Заказать
+                    Написать
                   </button>
                 </a>
 
@@ -225,403 +246,15 @@
               <a class="nav-link" href="#" id="category-vue">Vue.js</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="category-js">JavaScript</a>
+              <a class="nav-link" href="#" id="category-javascript">JavaScript</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="category-html">Верстка</a>
+              <a class="nav-link" href="#" id="category-nodejs">Node JS</a>
             </li>
           </ul>
         </div>
         <div class="row">
           <div class="card-deck portfolio mx-auto">
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Приложение обращается к серверу и получае базу данных ТОП 250
-                  фильмов. После выводит их на страницу и в зависимости от
-                  выбранного фильма меняет фон сайта
-                  <br />
-                  Использовал VUE, AXIOS, BOOTSTRAP-VUE.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/movies-app/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/5.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">VUE</p>
-                  <p class="card-category">Bootstrap-VUE</p>
-                  <p class="card-category">AXIOS</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Приложение:TОП 250 фильмов
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Приложение для подсчета бюджета, работающие в бразуере без
-                  перезагрузки.
-                  <br />
-                  Использовал VUE, ELEMENT-UI.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/budget-app/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/8.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">VUE</p>
-                  <p class="card-category">Element-UI</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Приложение: Бюджет
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Усовершенствованный список задач с подключенным оформлением от
-                  Materialize-css. Приложение работает в браузере без
-                  перезагрузки.
-                  <br />
-                  Использовал VUE, Materialize-css, Vuex, Router.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/todo-vue"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/15.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">VUE</p>
-                  <p class="card-category">Materialize-css</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Приложение: Менеджер задач
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Сервис по поиску дешевых авиабилетов по всему миру.
-                  <br />С дополнительной подгрузкой городов из API
-
-                  <br />
-                  Использовал JS, Webpack, API, Materialize-css
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/aviatickets/dist/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/7.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">JavaScript</p>
-                  <p class="card-category">Materialize-css</p>
-
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сервис аналог Aviasales
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Создание формы авторизации и регистрации пользователей.
-                  <br />С дополнительной подгрузкой городов из API(вводите на
-                  английском языке)
-
-                  <br />
-                  Использовал HTML, CSS, Bootstrap, JS, Webpack, API
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/login-page/dist/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/6.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">JavaScript</p>
-                  <p class="card-category">Bootstrap</p>
-                  <p class="card-category">API</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Проект: Регистрация и логин
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Верстка лендинга с слайдером и формой обратной связи.Сделана
-                  мобильная адаптация.
-                  <br />
-                  Использовал HTML, Flex,Scss, jQuery, Slick, FancyBox.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/projects/landing_flex/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/1.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">HTML</p>
-                  <p class="card-category">ScSS</p>
-                  <p class="card-category">Slick</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Лендинг для Юр.компании
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Верстка лендинга для UBER. Сделана мобильная адаптация.
-                  <br />
-                  Использовал HTML, Bootstrap, Sass.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/projects/Uber_bootstrap/src/"
-                    target="_blank"
-                    class="mx-auto"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/2.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">HTML</p>
-                  <p class="card-category">Bootstrap</p>
-                  <p class="card-category">Sass</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Лендинг для Uber
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-vue">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Простое мобильное приложение, работающее в браузере без
-                  перезагрузок(SPA)
-
-                  <br />
-                  Использовал HTML, CSS, Vue.js
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/projects/vue-todo/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/9.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">VUE</p>
-                  <p class="card-category">HTML</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Приложение: Список задач
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Креативный лендинг с примером нестандартного расположения
-                  элементов. Смотрится стильно
-
-                  <br />
-                  Использовал HTML, Bootstrap, Sass.
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/projects/gravity/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/4.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">HTML</p>
-                  <p class="card-category">SaSS</p>
-                  <p class="card-category">Bootstrap</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Креативный лендинг
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-js">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Создание на сайте вкладок, слайдера фотографий, таймера,
-                  калькулятора
-                  <br />
-                  Использовал HTML, CSS, Bootstrap, JS
-                  <br />
-                  <br />
-                  <a
-                    href="https://pullso.github.io/projects/yoga_js/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/3.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">JavaScript</p>
-                  <p class="card-category">Bootstrap</p>
-                  <p class="card-category">Css</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сайт по його-турам в Индию
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-md-6 col-12 mb-3 category-html">
-              <div class="card wow fadeInLeft">
-                <div class="card-desc">
-                  Разработка идеи, дизайна, верстка, создание видеофона.Сделана
-                  мобильная адаптация.
-                  <br />
-                  Использовал Pug, Flex, Scss, WOW.js, Animate.css,
-                  Font-Awesome, Parcel.
-                  <br />
-                  <br />
-                  <a href="https://pullso.github.io/old-site-project/docs/" target="_blank">
-                    <button type="button" class="btn btn-outline-light">
-                      Перейти
-                    </button></a
-                  >
-                </div>
-                <img
-                  class="card-img-top"
-                  src="img/portfolio/13.png"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <p class="card-category-main">PUG</p>
-                  <p class="card-category">ScSS</p>
-                  <p class="card-category">Parcel</p>
-                  <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сайт визитка с проектами
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -663,9 +296,7 @@
                   <p class="card-category-main">Javascript</p>
 
                   <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сертификат по курсу JS
-                    </p>
+                    <p class="card-title">Сертификат по курсу JS</p>
                   </div>
                 </div>
               </div>
@@ -698,9 +329,7 @@
                   <p class="card-category">Scss</p>
 
                   <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сертификат по курсу JS
-                    </p>
+                    <p class="card-title">Сертификат по курсу JS</p>
                   </div>
                 </div>
               </div>
@@ -734,9 +363,7 @@
                   <p class="card-category">Javascript</p>
 
                   <div class="row d-flex justify-content-between pl-1">
-                    <p class="card-title">
-                      Сертификат по курсу JS
-                    </p>
+                    <p class="card-title">Сертификат по курсу JS</p>
                   </div>
                 </div>
               </div>
@@ -789,13 +416,13 @@
             </div>
             <div class="about__buttons">
               <a
-                href="https://vk.me/pullso_music"
+                href="https://t.me/pullso"
                 class="wow fadeInLeft"
                 data-wow-delay="2s"
                 target="_blank"
               >
                 <button type="button" class="btn btn-dark mr-2 my-button-dark">
-                  Заказать
+                  Написать
                 </button>
               </a>
 
@@ -817,27 +444,6 @@
         </div>
       </div>
     </section>
-    <!-- <section class="quote">
-      <div class="container">
-        <div class="quote__bg"></div>
-        <div class="quote__text"></div>
-      </div>
-    </section> -->
-
-    <!-- <section class="contacts">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 m-auto">
-            <div class="contacts__title">
-              Контакты
-              <div class="contacts__subtitle">
-                Выберите удобный способ для связи
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <footer class="footer" id="contacts">
       <div class="container">
@@ -860,17 +466,17 @@
             </button>
 
             <button class="my-button-square wow rollIn" data-wow-delay="1s">
-              <a href="https://t-do.ru/pullso" target="_blank">
+              <a href="https://t.me/pullso" target="_blank">
                 <img
                   src="img/icons/send.svg"
-                  style="transform: translateX(-7%);"
+                  style="transform: translateX(-7%)"
                   alt="telegram"
                   title="Написать в телеграм"
                 />
               </a>
             </button>
             <button class="my-button-square wow rollIn" data-wow-delay="1.3s">
-              <a href="mailto:p.dubitskiy@yandex.ru" target="_blank">
+              <a href="mailto:pullso.code@gmail.com" target="_blank">
                 <img
                   src="img/icons/mail.svg"
                   alt="mail"
@@ -893,24 +499,18 @@
             data-wow-delay="2s"
           >
             <a href="https://t-do.ru/pullso" target="_blank">
-              by pullso 💻 2020 ©</a
+              by pullso 💻 2021 ©</a
             >
           </div>
         </div>
       </div>
     </footer>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>
