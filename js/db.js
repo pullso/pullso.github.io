@@ -2,6 +2,16 @@ const db = [
   {
     id: 1,
     description:
+      "Приложение для ведения домашней бухгалтерии. Можно зарегистироваться и создать свой аккаунт. Задать свои категории трат и бюджет в категориях. Посмотреть инфорграфику трат.<br> Использовал VUE, Firebase, Materialize-css, Vue-charts.",
+    link: "https://budget-plan.vercel.app/",
+    img: "img/portfolio/crm.png",
+    title: "Приложение: CRM бухгалтерия",
+    categories: ["vue", "Firebase", "Materialize-css"],
+    mobileSupport: false,
+  },
+  {
+    id: 1,
+    description:
       "Приложение обращается к серверу и получает базу данных ТОП 250 фильмов. После выводит их на страницу и в зависимости от выбранного фильма меняет фон сайта.<br> Использовал VUE, AXIOS, BOOTSTRAP-VUE.",
     link: "https://pullso.github.io/movies-app/",
     img: "img/portfolio/5.png",
