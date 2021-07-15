@@ -2,7 +2,17 @@ const db = [
   {
     id: 1,
     description:
-      "Приложение для ведения домашней бухгалтерии. Можно зарегистироваться и создать свой аккаунт. Задать свои категории трат и бюджет в категориях. Посмотреть инфорграфику трат.<br> Использовал VUE, Firebase, Materialize-css, Vue-charts.",
+      "Приложение для ведения заявок в онлайн банке. Можно создать или редактировать заявки.<br> Использовал VUE-3 с Composition-API, Firebase, Axios.",
+    link: "https://online-bank-vue3-composition.web.app/",
+    img: "img/portfolio/vue3.png",
+    title: "Приложение: Менеджер заявок",
+    categories: ["vue", "Firebase", "Composition-API"],
+    mobileSupport: false,
+  },
+  {
+    id: 2,
+    description:
+      "Приложение для ведения домашней бухгалтерии. Можно зарегистрироваться и создать свой аккаунт. Задать свои категории трат и бюджет в категориях. Посмотреть инфографику трат.<br> Использовал VUE, Firebase, Materialize-css, Vue-charts.",
     link: "https://budget-plan.vercel.app/",
     img: "img/portfolio/crm.png",
     title: "Приложение: CRM бухгалтерия",
@@ -10,7 +20,7 @@ const db = [
     mobileSupport: false,
   },
   {
-    id: 1,
+    id: 2,
     description:
       "Приложение обращается к серверу и получает базу данных ТОП 250 фильмов. После выводит их на страницу и в зависимости от выбранного фильма меняет фон сайта.<br> Использовал VUE, AXIOS, BOOTSTRAP-VUE.",
     link: "https://pullso.github.io/movies-app/",
@@ -62,7 +72,7 @@ const db = [
   {
     id: 2,
     description:
-      "Сервис по поиску дешевых авиабилетов по всему миру. С дополнительной подгрузкой городов из API <br /> Использовал JS, Webpack, API, Materialize-css",
+      "Сервис по поиску дешевых авиабилетов по всему миру. С дополнительной загрузкой городов из API <br /> Использовал JS, Webpack, API, Materialize-css",
     link: "https://pullso.github.io/aviatickets/dist/",
     img: "img/portfolio/7.png",
     title: "Сервис аналог Aviasales",
@@ -72,11 +82,11 @@ const db = [
   {
     id: 11,
     description:
-      "Создание формы авторизации и регистрации пользователей. С дополнительной подгрузкой городов из API(вводите на английском языке) <br /> Использовал HTML, CSS, Bootstrap, JS, Webpack, API",
+      "Создание формы авторизации и регистрации пользователей. С дополнительной загрузкой городов из API(вводите на английском языке) <br /> Использовал HTML, CSS, Bootstrap, JS, Webpack, API",
     link: "https://pullso.github.io/login-page/dist/",
     img: "img/portfolio/6.png",
     title: "Проект: Регистрация и логин",
-    categories: ["JavaScript", "Bootsrap", "API"],
+    categories: ["JavaScript", "Bootstrap", "API"],
     mobileSupport: false,
   },
   {
@@ -92,7 +102,7 @@ const db = [
   {
     id: 5,
     description:
-      "Оживление меню, слайдеров на сайте. Написание своих классов в объекто-ориентированном стиле. Автоматизация плееров видео.<br /> Использовал Javascript, Youtube API",
+      "Оживление меню, слайдеров на сайте. Написание своих классов в объектно-ориентированном стиле. Автоматизация плееров видео.<br /> Использовал Javascript, Youtube API",
     link: "https://javascript-site-project-oop.vercel.app/",
     img:
       "http://mini.s-shot.ru/1024x768/400/jpeg/?https://javascript-site-project-oop.vercel.app/",
