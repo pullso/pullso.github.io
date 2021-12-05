@@ -2,6 +2,16 @@ const db = [
   {
     id: 1,
     description:
+      "Приложение Excel для создания таблиц внутри вашего браузера. Приложение написано на чистом JavaScipt без использования фреймворков",
+    link: "https://excel-course-js.vercel.app/",
+    img: "img/portfolio/excel.png",
+    title: "Приложение: Табличный редактор (Excel)",
+    categories: ["JavaScript"],
+    mobileSupport: false,
+  },
+  {
+    id: 3,
+    description:
       "Приложение для ведения заявок в онлайн банке. Можно создать или редактировать заявки.<br> Использовал VUE-3 с Composition-API, Firebase, Axios.",
     link: "https://online-bank-vue3-composition.web.app/",
     img: "img/portfolio/vue3.png",
@@ -20,7 +30,7 @@ const db = [
     mobileSupport: false,
   },
   {
-    id: 2,
+    id: 6,
     description:
       "Приложение обращается к серверу и получает базу данных ТОП 250 фильмов. После выводит их на страницу и в зависимости от выбранного фильма меняет фон сайта.<br> Использовал VUE, AXIOS, BOOTSTRAP-VUE.",
     link: "https://pullso.github.io/movies-app/",
@@ -141,12 +151,12 @@ const db = [
     mobileSupport: false,
   },
   {
-    id: 5,
+    id: 1,
     description:
-      "Бот с шутками, комиксами, курсом валют и погодой написанный на Node js",
-    link: "https://t.me/PullsoBot",
+      " Бот выдает удобную афишу на выбранный день из мероприятий. Написан на Node js. Использовал библиотеку telegraf-js. К боту прикручен календарь.",
+    link: "https://t.me/afishatimepadbot",
     img: "img/portfolio/bot.png",
-    title: "Telegram Bot на NodeJS",
+    title: "TelegramBot для поиска мероприятий",
     categories: ["NODEJS", "javascript"],
     mobileSupport: true,
   },
